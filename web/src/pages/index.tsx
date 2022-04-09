@@ -1,7 +1,9 @@
 export default function Home(): JSX.Element {
   return (
-    <>
-      <h1>olá Mundo</h1>
-    </>
+    <div>
+      <h1>Login</h1>
+
+      <a href="/api/auth/login">Logar</a>
+    </div>
   );
 }
