@@ -4,6 +4,7 @@ aplicação
 tecnologias
   NestJS
   Prisma
+  Auth0
   GraphQL
   Apache Kafka
   Next.js
