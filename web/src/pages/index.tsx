@@ -6,8 +6,6 @@ export default function Home(): JSX.Element {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
-  const token = getAccessToken(req, res);
-  console.log('token: ', token);
   const session = getSession(req, res);
 
   if (!session) {

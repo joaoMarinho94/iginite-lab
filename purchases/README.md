@@ -6,6 +6,12 @@ Serviço responsável pela parte de pagamentos da aplicação
 ```bash
 #pasta raiz
 $ sudo docker-compose up
+
+#parar containers
+$ sudo docker-compose down
+
+#url Apache kafka
+$ http://localhost:8080/
 ```
 
 ## Rodar Aplicação
