@@ -1,11 +1,17 @@
 ## Purchases Service
 
-Serviço responsável pela parte de pagamentos da aplicação
+Serviço responsável pela parte de aulas
 ## Iniciar Containers
 
 ```bash
 #pasta raiz
 $ sudo docker-compose up
+
+#parar containers
+$ sudo docker-compose down
+
+#url Apache kafka
+$ http://localhost:8080/
 ```
 
 ## Rodar Aplicação
