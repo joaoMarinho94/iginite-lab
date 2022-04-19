@@ -1,6 +1,17 @@
 import { getAccessToken, withPageAuthRequired } from '@auth0/nextjs-auth0';
+import { useGetProductsQuery } from '../../graphql/generated/graphql';
+import {
+  getServerPageGetProducts,
+  ssrGetProducts,
+} from '../../graphql/generated/page';
+import { withApollo } from '../../lib/withApollo';
 
-export default function Home(): JSX.Element {
+function Home({ data }): JSX.Element {
+  console.log('products: ', data.products);
+
+  // const { data, loading, error } = useGetProductsQuery();
+  // console.log('data: ', data);
+
   return (
     <div>
       <h1>Hello word</h1>
@@ -9,11 +20,11 @@ export default function Home(): JSX.Element {
 }
 
 export const getServerSideProps = withPageAuthRequired({
-  getServerSideProps: async ({ req, res }) => {
-    console.log(getAccessToken(req, res));
+  getServerSideProps: async ctx => {
+    console.log(getAccessToken(ctx.req, ctx.res));
 
-    return {
-      props: {},
-    };
+    return getServerPageGetProducts({}, ctx);
   },
 });
+
+export default withApollo(ssrGetProducts.withPage()(Home));
