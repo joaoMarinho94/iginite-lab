@@ -37,10 +37,10 @@ model Enrollment {
   id String @id @default(uuid())
 
   Student   Student @relation(fields: [studentId], references: [id])
-  studentId String  @unique
+  studentId String
 
   Course   Course @relation(fields: [courseId], references: [id])
-  courseId String @unique
+  courseId String
 
   canceledAt DateTime?
   createdAt  DateTime  @default(now())
