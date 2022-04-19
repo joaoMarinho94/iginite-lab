@@ -1,6 +1,6 @@
 ## Purchases Service
 
-Serviço responsável pela parte de aulas
+Serviço responsável pela parte de sala de aulas
 ## Iniciar Containers
 
 ```bash
