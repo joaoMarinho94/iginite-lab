@@ -17,7 +17,7 @@ function Home(): JSX.Element {
 
   return (
     <div>
-      <h1>Hello word</h1>
+      <h1 className="text-3xl font-bold italic">Hello word</h1>
     </div>
   );
 }

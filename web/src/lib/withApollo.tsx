@@ -31,7 +31,7 @@ export const withApollo = (Component: NextPage) => {
   return function Provider({ apolloState, ...rest }: any): JSX.Element {
     return (
       <ApolloProvider client={getApolloClient(undefined, apolloState)}>
-        <Component {...rest} />;
+        <Component {...rest} />
       </ApolloProvider>
     );
   };
