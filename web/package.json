@@ -14,12 +14,14 @@
   "dependencies": {
     "@apollo/client": "^3.5.10",
     "@auth0/nextjs-auth0": "^1.7.0",
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.6",
     "graphql": "15",
-    "next": "10.0.9",
+    "next": "12.1.4",
     "next-connect": "^0.10.1",
     "next-http-proxy-middleware": "^1.2.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.6.2",
@@ -33,6 +35,8 @@
     "@types/react": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.0",
     "autoprefixer": "^10.4.4",
     "eslint": "^7.22.0",
     "eslint-config-airbnb": "^18.2.1",
