@@ -12,7 +12,6 @@ import {
   GetProductsQuery,
   useCreatePurchaseMutation,
 } from '../graphql/generated/graphql';
-import { withApollo } from '../lib/withApollo';
 
 interface EnrollProps {
   data: GetProductsQuery;
@@ -99,4 +98,4 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export default withApollo(ssrGetProducts.withPage()(Enroll));
+export default withPublicApollo(ssrGetProducts.withPage()(Enroll));
